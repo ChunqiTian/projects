@@ -1,0 +1,10 @@
+{"question": "Can I return an unused item within 30 days?", "expected_intent": "policy_answer", "expected_doc": "refund_policy", "should_refuse": false}
+{"question": "Are final-sale items refundable?", "expected_intent": "policy_answer", "expected_doc": "refund_policy", "should_refuse": false}
+{"question": "How long does standard shipping take?", "expected_intent": "policy_answer", "expected_doc": "shipping_policy", "should_refuse": false}
+{"question": "Do you ship internationally?", "expected_intent": "policy_answer", "expected_doc": "shipping_policy", "should_refuse": false}
+{"question": "How long is the product warranty?", "expected_intent": "policy_answer", "expected_doc": "warranty_policy", "should_refuse": false}
+{"question": "Does accidental damage count under warranty?", "expected_intent": "policy_answer", "expected_doc": "warranty_policy", "should_refuse": false}
+{"question": "What is your CEO's favorite color?", "expected_intent": "refuse", "expected_doc": null, "should_refuse": true}
+{"question": "Can you help me write my school essay?", "expected_intent": "refuse", "expected_doc": null, "should_refuse": true}
+{"question": "What was your company's revenue last year?", "expected_intent": "refuse", "expected_doc": null, "should_refuse": true}
+{"question": "Can I get a refund for a used item after 60 days?", "expected_intent": "policy_answer", "expected_doc": "refund_policy", "should_refuse": false}
