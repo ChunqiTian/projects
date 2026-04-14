@@ -28,7 +28,7 @@ The portfolio includes:
 | [`2_layer_nn.ipynb`](./2_layer_nn.ipynb) | Neural network fundamentals | Forward pass, backpropagation, gradient checking, MNIST, SGD vs Adam |
 | [`ab_test_marketing.ipynb`](./ab_test_marketing.ipynb) | Marketing experiment analysis | Two-proportion z-test, conversion analysis, hypothesis testing |
 | [`commercial_chatbot/`](./commercial_chatbot) | Customer-support chatbot system | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
-| [`recommend_system_food_review/`] | Food recommendation system from review interactions | User-based CF, item-based CF, leave-one-out evaluation, Hit Rate@K, neural collaborative filtering, user/item embeddings, PyTorch |
+| [`recommend_system_food_review/`](./recommend_system_food_review) | Food recommendation system from review interactions | User-based CF, item-based CF, leave-one-out evaluation, Hit Rate@K, neural collaborative filtering, user/item embeddings, PyTorch |
 
 ## Project Summaries
 
