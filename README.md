@@ -13,7 +13,7 @@ The portfolio includes:
 - explainability workflows using SHAP and LIME
 - model calibration, thresholding, and evaluation for risk-sensitive tasks
 - statistical A/B testing
-- recommender system
+- recommender system with Hit Rate@K ranking evaluation, collaborative fltering, and embedding-based models
 - an end-to-end commercial support chatbot with RAG, guardrails, and evaluation
 
 ## Featured Projects
