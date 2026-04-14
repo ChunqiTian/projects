@@ -1,6 +1,6 @@
 # Machine Learning Portfolio
 
-This repository is a collection of hands-on projects in machine learning, deep learning, statistical testing, explainability, and LLM application design. The work spans classical supervised learning, neural networks, computer vision, credit-risk modeling, experimentation, and retrieval-augmented chatbot systems.
+This repository is a collection of hands-on projects in machine learning, deep learning, statistical testing, explainability, recommender system, and LLM application design. The work spans classical supervised learning, neural networks, computer vision, credit-risk modeling, experimentation, and retrieval-augmented chatbot systems.
 
 ## Repository Overview
 
@@ -13,6 +13,7 @@ The portfolio includes:
 - explainability workflows using SHAP and LIME
 - model calibration, thresholding, and evaluation for risk-sensitive tasks
 - statistical A/B testing
+- recommender system
 - an end-to-end commercial support chatbot with RAG, guardrails, and evaluation
 
 ## Featured Projects
