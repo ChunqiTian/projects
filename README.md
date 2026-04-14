@@ -27,6 +27,7 @@ The portfolio includes:
 | [`2_layer_nn.ipynb`](./2_layer_nn.ipynb) | Neural network fundamentals | Forward pass, backpropagation, gradient checking, MNIST, SGD vs Adam |
 | [`ab_test_marketing.ipynb`](./ab_test_marketing.ipynb) | Marketing experiment analysis | Two-proportion z-test, conversion analysis, hypothesis testing |
 | [`commercial_chatbot/`](./commercial_chatbot) | Customer-support chatbot system | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
+| [`recommend_system_food_review/`] | Food recommendation system from review interactions | User-based CF, item-based CF, leave-one-out evaluation, Hit Rate@K, neural collaborative filtering, user/item embeddings, PyTorch |
 
 ## Project Summaries
 
@@ -54,22 +55,34 @@ Analyzed a marketing experiment using a two-proportion z-test to compare convers
 ### 8. Commercial Support Chatbot
 Built a portfolio-style support chatbot that goes beyond basic chat completion. The system includes retrieval-augmented generation, chunked document retrieval, citation-based answering, refusal logic for weak evidence, routing to tools or escalation workflows, conversation memory, and an evaluation harness.
 
+### 9. Food Review Recommendation System 
+Built a recommender-systems project on the Amazon food reviews dataset using a staged workflow: streaming ingestion, exploratory analysis, recommendation-focused EDA, user-item matrix construction, user-based collaborative filtering, item-based collaborative filtering, direct comparison of recommendation lists, leave-one-out offline evaluation with Hit Rate@K, and deep learning recommenders in PyTorch. The deep learning stage uses learned user and item embeddings, then extends the architecture with global mean, user bias, item bias, bounded predictions, and an ablation-style comparison of plain versus bias-enhanced models.
+
+
 ## Skills Demonstrated
 
 - Python
 - pandas and NumPy
 - scikit-learn pipelines
+- supervised learning for classification and regression
 - logistic regression and tree-based models
 - regularization with ridge and lasso
 - gradient boosting
+- recommender systems
+- collaborative filtering
+- ranking evaluation and Hit Rate@K
 - neural networks and CNNs
 - PyTorch
+- embedding-based models
+- transfer learning
+- TensorBoard / experiment tracking
 - model evaluation for imbalanced classification
 - calibration and threshold tuning
 - SHAP and LIME explainability
 - statistical hypothesis testing
 - retrieval-augmented generation
-- LLM guardrails and workflow routing
+- information retrieval / hybrid retrieval
+- LLM guardrails, routing, and workflow orchestration
 
 ## Repository Structure
 
@@ -85,6 +98,7 @@ Most projects are currently organized as standalone notebooks in the repository 
 ├── commercial_chatbot/
 ├── default_of_credit_card_clients.ipynb
 ├── employee_attrition.ipynb
+├── recommend_system_food_review/
 └── ridge_lasso.ipynb
 ```
 
