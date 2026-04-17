@@ -1,12 +1,13 @@
 # Machine Learning Portfolio
 
-This repository is a collection of hands-on projects in machine learning, deep learning, statistical testing, explainability, recommender system, and LLM application design. The work spans classical supervised learning, neural networks, computer vision, credit-risk modeling, experimentation, and retrieval-augmented chatbot systems.
+This repository is a collection of hands-on projects in machine learning, deep learning, time series analysis, statistical testing, explainability, recommender systems, and LLM application design. The work spans classical supervised learning, neural networks, computer vision, credit risk modeling, experimentation, and retrieval-augmented chatbot systems.
 
 ## Repository Overview
 
 The portfolio includes:
 
 - tabular classification projects with real-world business datasets
+- time-series implementations on sales forecasting
 - regression and regularization experiments
 - neural network implementations in NumPy and PyTorch
 - computer vision models on CIFAR-10
@@ -29,6 +30,7 @@ The portfolio includes:
 | [`ab_test_marketing.ipynb`](./ab_test_marketing.ipynb) | Marketing experiment analysis | Two-proportion z-test, conversion analysis, hypothesis testing |
 | [`commercial_chatbot/`](./commercial_chatbot) | Customer-support chatbot system | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
 | [`recommend_system_food_review/`](./recommend_system_food_review) | Food recommendation system from review interactions | User-based CF, item-based CF, leave-one-out evaluation, Hit Rate@K, neural collaborative filtering, user/item embeddings, PyTorch |
+| [`sales forecast/'](./sales forecast) | Time-series technics | Exponential smoothing, Holt-Wnters, moving average, XGBoost with lag and rolling-window features, WMAPE, MAPE, MAE, RMSE |
 
 ## Project Summaries
 
@@ -59,6 +61,9 @@ Built a portfolio-style support chatbot that goes beyond basic chat completion. 
 ### 9. Food Review Recommendation System 
 Built a recommender-systems project on the Amazon food reviews dataset using a staged workflow: streaming ingestion, exploratory analysis, recommendation-focused EDA, user-item matrix construction, user-based collaborative filtering, item-based collaborative filtering, direct comparison of recommendation lists, leave-one-out offline evaluation with Hit Rate@K, and deep learning recommenders in PyTorch. The deep learning stage uses learned user and item embeddings, then extends the architecture with global mean, user bias, item bias, bounded predictions, and an ablation-style comparison of plain versus bias-enhanced models.
 
+### 10. Sales Forecasting
+Built a sales forecasting pipeline on the a time series dataset, comparing baselines, machine learning models, and classical time-series methods. The project covers two forecasting tasks: row-level sales prediction and daily total sales forecasting. For row-level prediction, I compared a baseline, Linear Regression, XGBoost, and XGBoost with lag and rolling-window features. For daily total forecasting, I compared Moving Average, Simple Exponential Smoothing, and Holt-Winters. MAE, RMSE, WMAPE, and MAPE are used for the evaluation. 
+
 
 ## Skills Demonstrated
 
@@ -67,6 +72,9 @@ Built a recommender-systems project on the Amazon food reviews dataset using a s
 - scikit-learn pipelines
 - supervised learning for classification and regression
 - logistic regression and tree-based models
+- Xgboost with lag and rolling-window features
+- time series
+- exponential smoothing, Holt-winters
 - regularization with ridge and lasso
 - gradient boosting
 - recommender systems
@@ -100,7 +108,8 @@ Most projects are currently organized as standalone notebooks in the repository 
 ├── default_of_credit_card_clients.ipynb
 ├── employee_attrition.ipynb
 ├── recommend_system_food_review/
-└── ridge_lasso.ipynb
+├── ridge_lasso.ipynb
+└── sales_forecast/
 ```
 
 ## Notes
