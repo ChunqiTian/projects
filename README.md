@@ -2,16 +2,16 @@
 
 A collection of projects in machine learning, deep learning, recommender systems, time-series forecasting, and LLM applications. The work combines data exploration, model development, and evaluation, with attention to interpretability and practical decision-making.
 
-The projects below begin with applied systems and advanced modeling, followed by predictive analytics and foundational work.
+The projects below begin with applied systems and advanced modeling, followed by predictive analytics and foundational work. Projects are organized as Jupyter notebooks and modular Python projects. 
 
 ## Featured Projects
 
 | Project | Focus | Key Methods |
 | --- | --- | --- |
-| [Commercial Support Chatbot](./commercial_chatbot/) | Customer-support workflows with grounded responses | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
-| [Food Review Recommendation System](./recommend_system_food_review/) | Personalized recommendations from review interactions | Collaborative filtering, user/item embeddings, neural recommenders, PyTorch, Hit Rate@K |
+| [Commercial Support Chatbot](./commercial_chatbot/) | Customer-support workflows with grounded responses | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation, modular Python project |
+| [Food Review Recommendation System](./recommend_system_food_review/) | Personalized recommendations from review interactions | Collaborative filtering, user/item embeddings, neural recommenders, PyTorch, Hit Rate@K, modular Python project |
 | [CIFAR-10 Image Classification](./cifar10_cnn.ipynb) | Custom CNNs and transfer learning | PyTorch, ResNet18, data augmentation, confusion-matrix analysis |
-| [Sales Forecasting](./sales_forecast/) | Sales prediction and daily demand forecasting | XGBoost, lag and rolling-window features, exponential smoothing, Holt-Winters |
+| [Sales Forecasting](./sales_forecast/) | Sales prediction and daily demand forecasting | XGBoost, lag and rolling-window features, exponential smoothing, Holt-Winters, modular Python project |
 | [Employee Attrition Prediction](./employee_attrition.ipynb) | Attrition risk ranking and intervention prioritization | MLP, SVC, XGBoost, LightGBM, RandomizedSearchCV, PR-AUC, calibration |
 | [Credit Default Risk Modeling](./default_of_credit_card_clients.ipynb) | Default prediction and probability evaluation | Logistic regression, HistGradientBoosting, calibration, threshold selection |
 | [Adult Income Classification](./adult_income_uci_gb.ipynb) | Interpretable income classification | Gradient boosting, preprocessing pipelines, SHAP, LIME, bootstrapping |
