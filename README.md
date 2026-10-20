@@ -18,6 +18,7 @@ The projects below begin with applied systems and advanced modeling, followed by
 | [Credit Card Fraud Detection](./Credit%20Card%20Fraud.ipynb) | Classification under class imbalance | Logistic regression, random forest, PR-AUC, ROC-AUC, threshold analysis |
 | [Neural Network from Scratch](./2_layer_nn.ipynb) | Neural network implementation and training | NumPy, backpropagation, gradient checking, PyTorch, SGD, Adam |
 | [Marketing A/B Test](./ab_test_marketing.ipynb) | Conversion analysis and hypothesis testing | Two-proportion z-test, treatment/control comparisons |
+| [Ridge and Lasso Regression](./ridge_lasso.ipynb) | Regression and regularization | Ridge regression, lasso regression, L1 and L2 regularization |
 
 ## Project Summaries
 
@@ -61,6 +62,11 @@ Implemented a two-layer neural network in NumPy, including forward propagation, 
 
 Analyzed a marketing experiment by validating the data, summarizing treatment and control groups, and comparing conversion rates. Used a two-proportion z-test to assess statistical evidence of a difference between groups.
 
+### Ridge and Lasso Regression
+
+Explored ridge and lasso regression to examine how regularization influences regression models. Compared L1 and L2 penalties and their effects on model coefficients.
+
+
 ## Technical Skills
 
 | Area | Tools and Methods |
@@ -93,7 +99,5 @@ Projects are organized as standalone notebooks and project folders. Use the link
 ├── ab_test_marketing.ipynb
 └── ridge_lasso.ipynb
 ```
-
-[Ridge and Lasso Regression](./ridge_lasso.ipynb) provides additional foundational work on regression and regularization.
 
 Several notebooks retain their original learning-sprint structure to document the progression of experiments.
