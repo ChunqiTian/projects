@@ -1,119 +1,99 @@
 # Machine Learning Portfolio
 
-This repository is a collection of hands-on projects in machine learning, deep learning, time series analysis, statistical testing, explainability, recommender systems, and LLM application design. The work spans classical supervised learning, neural networks, computer vision, credit risk modeling, experimentation, and retrieval-augmented chatbot systems.
+A collection of projects in machine learning, deep learning, recommender systems, time-series forecasting, and LLM applications. The work combines data exploration, model development, and evaluation, with attention to interpretability and practical decision-making.
 
-## Repository Overview
-
-The portfolio includes:
-
-- tabular classification projects with real-world business datasets
-- time-series implementations on sales forecasting
-- regression and regularization experiments
-- neural network implementations in NumPy and PyTorch
-- computer vision models on CIFAR-10
-- explainability workflows using SHAP and LIME
-- model calibration, thresholding, and evaluation for risk-sensitive tasks
-- statistical A/B testing
-- recommender system with ranking evaluation, collaborative fltering, and embedding-based models
-- an end-to-end commercial support chatbot with RAG, guardrails, and evaluation
+The projects below begin with applied systems and advanced modeling, followed by predictive analytics and foundational work.
 
 ## Featured Projects
 
-| Project | Focus | Main Techniques |
+| Project | Focus | Key Methods |
 | --- | --- | --- |
-| [`Credit Card Fraud.ipynb`](./Credit%20Card%20Fraud.ipynb) | Fraud detection on imbalanced transaction data | Logistic regression, random forest, ROC-AUC, PR-AUC, threshold analysis |
-| [`adult_income_uci_gb.ipynb`](./adult_income_uci_gb.ipynb) | Income classification with explainability | Gradient boosting, SHAP, LIME, bootstrapping, preprocessing pipelines |
-| [`default_of_credit_card_clients.ipynb`](./default_of_credit_card_clients.ipynb) | Credit default risk modeling | Logistic regression, HistGradientBoosting, calibration, thresholding, explainability |
-| [`employee_attrition.ipynb`](./employee_attrition.ipynb) | Employee attrition prediction | PR-AUC model selection, calibration, thresholding, feature importance |
-| [`cifar10_cnn.ipynb`](./cifar10_cnn.ipynb) | Image classification | CNNs, data augmentation, transfer learning, ResNet18, PyTorch |
-| [`2_layer_nn.ipynb`](./2_layer_nn.ipynb) | Neural network fundamentals | Forward pass, backpropagation, gradient checking, MNIST, SGD vs Adam |
-| [`ab_test_marketing.ipynb`](./ab_test_marketing.ipynb) | Marketing experiment analysis | Two-proportion z-test, conversion analysis, hypothesis testing |
-| [`commercial_chatbot/`](./commercial_chatbot) | Customer-support chatbot system | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
-| [`recommend_system_food_review/`](./recommend_system_food_review) | Food recommendation system from review interactions | User-based CF, item-based CF, leave-one-out evaluation, Hit Rate@K, neural collaborative filtering, user/item embeddings, PyTorch |
-| [`sales forecast/`](./sales_forecast) | Time-series technics | Exponential smoothing, Holt-Wnters, moving average, XGBoost with lag and rolling-window features, WMAPE, MAPE, MAE, RMSE |
+| [Commercial Support Chatbot](./commercial_chatbot/) | Customer-support workflows with grounded responses | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
+| [Food Review Recommendation System](./recommend_system_food_review/) | Personalized recommendations from review interactions | Collaborative filtering, user/item embeddings, neural recommenders, PyTorch, Hit Rate@K |
+| [CIFAR-10 Image Classification](./cifar10_cnn.ipynb) | Custom CNNs and transfer learning | PyTorch, ResNet18, data augmentation, confusion-matrix analysis |
+| [Sales Forecasting](./sales_forecast/) | Sales prediction and daily demand forecasting | XGBoost, lag and rolling-window features, exponential smoothing, Holt-Winters |
+| [Employee Attrition Prediction](./employee_attrition.ipynb) | Attrition risk ranking and intervention prioritization | MLP, SVC, XGBoost, LightGBM, RandomizedSearchCV, PR-AUC, calibration |
+| [Credit Default Risk Modeling](./default_of_credit_card_clients.ipynb) | Default prediction and probability evaluation | Logistic regression, HistGradientBoosting, calibration, threshold selection |
+| [Adult Income Classification](./adult_income_uci_gb.ipynb) | Interpretable income classification | Gradient boosting, preprocessing pipelines, SHAP, LIME, bootstrapping |
+| [Credit Card Fraud Detection](./Credit%20Card%20Fraud.ipynb) | Classification under class imbalance | Logistic regression, random forest, PR-AUC, ROC-AUC, threshold analysis |
+| [Neural Network from Scratch](./2_layer_nn.ipynb) | Neural network implementation and training | NumPy, backpropagation, gradient checking, PyTorch, SGD, Adam |
+| [Marketing A/B Test](./ab_test_marketing.ipynb) | Conversion analysis and hypothesis testing | Two-proportion z-test, treatment/control comparisons |
 
 ## Project Summaries
 
-### 1. Credit Card Fraud Detection
-Built and evaluated fraud detection models on an imbalanced dataset. The notebook compares baseline and tree-based methods, with emphasis on metrics that matter for rare-event detection such as precision-recall performance, ROC curves, threshold tradeoffs, and practical operating points.
+### Commercial Support Chatbot
 
-### 2. Adult Income Classification
-Developed an interpretable income prediction workflow using the Adult dataset. This project combines preprocessing pipelines with boosting models and focuses on model explanation through feature importance, SHAP, LIME, and bootstrap-based uncertainty analysis.
+Built a customer-support chatbot with retrieval-augmented generation and hybrid retrieval to produce responses grounded in source documents. Implemented citation-based answers, guardrails for insufficient evidence, intent routing, conversation memory, and tool or escalation workflows. Added an evaluation harness to assess system behavior.
 
-### 3. Default of Credit Card Clients
-Created a credit-risk modeling project centered on probability quality as well as ranking quality. In addition to classification performance, the workflow includes calibration analysis, threshold selection, confusion-matrix interpretation, and explainability.
+### Food Review Recommendation System
 
-### 4. Employee Attrition Prediction
-Built a human-resources risk model for ranking employees by attrition risk. The project compares multiple classifiers, uses PR-AUC for model selection under class imbalance, and explores calibration and decision-threshold strategies for capacity-limited intervention.
+Developed a recommendation workflow using Amazon food reviews, from streaming ingestion and exploratory analysis to user-item matrix construction. Compared user-based and item-based collaborative filtering using leave-one-out evaluation and Hit Rate@K. Built neural recommenders in PyTorch with learned user and item embeddings, then compared plain and bias-enhanced models through ablation experiments.
 
-### 5. CIFAR-10 CNN and Transfer Learning
-Implemented image classification workflows in PyTorch, starting with a custom CNN and extending to transfer learning with ResNet18. The notebook includes normalization, augmentation, training curves, confusion-matrix analysis, and model comparison.
+### CIFAR-10 Image Classification
 
-### 6. Two-Layer Neural Network from Scratch
-Implemented a two-layer neural network in NumPy to understand the mechanics of forward propagation, backpropagation, and gradient checking, then extended the workflow to a PyTorch MLP on MNIST with optimizer comparison and TensorBoard logging.
+Built image classification workflows in PyTorch using a custom CNN and transfer learning with ResNet18. Applied normalization and data augmentation, and compared model behavior through training curves and confusion-matrix analysis.
 
-### 7. Marketing A/B Test
-Analyzed a marketing experiment using a two-proportion z-test to compare conversion rates between groups. The notebook focuses on clean statistical workflow: loading data, validating structure, summarizing treatment and control groups, and testing for significance.
+### Sales Forecasting
 
-### 8. Commercial Support Chatbot
-Built a portfolio-style support chatbot that goes beyond basic chat completion. The system includes retrieval-augmented generation, chunked document retrieval, citation-based answering, refusal logic for weak evidence, routing to tools or escalation workflows, conversation memory, and an evaluation harness.
+Developed workflows for row-level sales prediction and daily total sales forecasting. Compared baseline, linear regression, and XGBoost models, including lag and rolling-window features. Evaluated moving average, simple exponential smoothing, and Holt-Winters methods for daily forecasting using MAE, RMSE, WMAPE, and MAPE.
 
-### 9. Food Review Recommendation System 
-Built a recommender-systems project on the Amazon food reviews dataset using a staged workflow: streaming ingestion, exploratory analysis, recommendation-focused EDA, user-item matrix construction, user-based collaborative filtering, item-based collaborative filtering, direct comparison of recommendation lists, leave-one-out offline evaluation with Hit Rate@K, and deep learning recommenders in PyTorch. The deep learning stage uses learned user and item embeddings, then extends the architecture with global mean, user bias, item bias, bounded predictions, and an ablation-style comparison of plain versus bias-enhanced models.
+### Employee Attrition Prediction
 
-### 10. Sales Forecasting
-Built a sales forecasting pipeline on a time series dataset. The project covers two forecasting tasks: row-level sales prediction and daily total sales forecasting. For row-level prediction, a baseline, Linear Regression, XGBoost, and XGBoost with lag and rolling-window features are compared. For daily total forecasting, Moving Average, Simple Exponential Smoothing, and Holt-Winters are compared. MAE, RMSE, WMAPE, and MAPE are used for the evaluation. 
+Analyzed employee characteristics and employment factors to examine attrition patterns and build preprocessing pipelines. Compared classifiers including SVC, MLP, XGBoost, and LightGBM, tuned hyperparameters with RandomizedSearchCV, and selected MLP based on cross-validation PR-AUC. Evaluated probability calibration, decision thresholds, and ranked predictions for potential retention interventions under limited capacity. Used permutation importance to interpret predictive associations without treating them as causal explanations.
 
+### Credit Default Risk Modeling
 
-## Skills Demonstrated
+Developed a credit default prediction workflow using logistic regression and HistGradientBoosting. Evaluated both risk ranking and probability quality through calibration analysis, threshold selection, confusion-matrix interpretation, and model explainability.
 
-- Python
-- pandas and NumPy
-- scikit-learn pipelines
-- supervised learning for classification and regression
-- logistic regression and tree-based models
-- Xgboost with lag and rolling-window features
-- time series
-- exponential smoothing, Holt-winters
-- regularization with ridge and lasso
-- gradient boosting
-- recommender systems
-- collaborative filtering
-- ranking evaluation and Hit Rate@K
-- neural networks and CNNs
-- PyTorch
-- embedding-based models
-- transfer learning
-- TensorBoard / experiment tracking
-- model evaluation for imbalanced classification
-- calibration and threshold tuning
-- SHAP and LIME explainability
-- statistical hypothesis testing
-- retrieval-augmented generation
-- information retrieval / hybrid retrieval
-- LLM guardrails, routing, and workflow orchestration
+### Adult Income Classification
 
-## Repository Structure
+Built an income classification workflow using preprocessing pipelines and gradient boosting. Examined model predictions through feature importance, SHAP, and LIME, and used bootstrapping to explore uncertainty.
 
-Most projects are currently organized as standalone notebooks in the repository root, with the chatbot project implemented as a Python application folder:
+### Credit Card Fraud Detection
+
+Built and compared logistic regression and random forest models on imbalanced transaction data. Evaluated fraud detection using precision-recall performance and ROC-AUC, and examined decision thresholds to understand the tradeoff between detecting fraud and generating false alerts.
+
+### Neural Network from Scratch
+
+Implemented a two-layer neural network in NumPy, including forward propagation, backpropagation, and gradient checking. Extended the workflow with a PyTorch MLP for MNIST, compared SGD and Adam, and tracked training with TensorBoard.
+
+### Marketing A/B Test
+
+Analyzed a marketing experiment by validating the data, summarizing treatment and control groups, and comparing conversion rates. Used a two-proportion z-test to assess statistical evidence of a difference between groups.
+
+## Technical Skills
+
+| Area | Tools and Methods |
+| --- | --- |
+| Programming and data analysis | Python, pandas, NumPy |
+| Machine learning | scikit-learn, preprocessing pipelines, logistic regression, SVC, random forest, XGBoost, LightGBM, ridge and lasso |
+| Deep learning | PyTorch, MLPs, CNNs, transfer learning, embeddings, TensorBoard |
+| Model evaluation | Cross-validation, hyperparameter tuning, PR-AUC, ROC-AUC, calibration, threshold selection |
+| Interpretability | Permutation importance, SHAP, LIME |
+| Recommender systems | Collaborative filtering, neural recommenders, leave-one-out evaluation, Hit Rate@K |
+| Forecasting | Lag features, rolling-window features, exponential smoothing, Holt-Winters |
+| Statistical analysis | A/B testing, hypothesis testing, bootstrapping |
+| LLM applications | RAG, hybrid retrieval, citations, guardrails, intent routing, evaluation |
+
+## Repository Guide
+
+Projects are organized as standalone notebooks and project folders. Use the links above to explore each project.
 
 ```text
 .
-├── 2_layer_nn.ipynb
-├── Credit Card Fraud.ipynb
-├── ab_test_marketing.ipynb
-├── adult_income_uci_gb.ipynb
-├── cifar10_cnn.ipynb
 ├── commercial_chatbot/
-├── default_of_credit_card_clients.ipynb
-├── employee_attrition.ipynb
 ├── recommend_system_food_review/
-├── ridge_lasso.ipynb
-└── sales_forecast/
+├── sales_forecast/
+├── cifar10_cnn.ipynb
+├── employee_attrition.ipynb
+├── default_of_credit_card_clients.ipynb
+├── adult_income_uci_gb.ipynb
+├── Credit Card Fraud.ipynb
+├── 2_layer_nn.ipynb
+├── ab_test_marketing.ipynb
+└── ridge_lasso.ipynb
 ```
 
-## Notes
+[Ridge and Lasso Regression](./ridge_lasso.ipynb) provides additional foundational work on regression and regularization.
 
-- Several notebooks are structured as learning sprints, with day-by-day progress and experiments.
-- Some projects emphasize model interpretability and business-facing evaluation rather than only raw accuracy.
-- The chatbot project is a systems project and is intentionally different from the notebook-based ML work in the rest of the repository.
+Several notebooks retain their original learning-sprint structure to document the progression of experiments.
